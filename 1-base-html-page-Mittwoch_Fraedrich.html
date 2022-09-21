@@ -19,12 +19,58 @@
         #header{
             text-align: center;
         }
+        /*ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 40;
+        }
+       
+        ul{
+            background-color: #CAA481;
+        }
+        a {
+            display: block;
+            padding: 8px;
+            float: left;
+        }*/
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #CAA481;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+        }
+        
+        /*li a :hover{
+            background-color: #8b6632;
+        }*/
+
+        #search{
+            text-align: right;
+            padding: 0%;
+        }
 
         body {
             height: 100%;
             margin: 0;
             background-color: #FEFFFE ;
         }
+        /*.navbar{
+            background-color: rgb(108, 66, 29);
+            
+        }*/
         #main_title{
             text-align: center;
         }
@@ -68,24 +114,30 @@
         <div id="header">
             <img id="header_logo" src="./images/Nobel.png" alt="Logo">
         </div>
+        
+        <nav class="menu">
+            <ul id="menu">
+                <li><a href="#nav-landing">Startseite</a></li>
+                <li><a href="#nav-peace">Friedensnobelpreisträger*innen</a></li>
+                <li><a href="#nav-lit">Literaturnobelpreisträger*innen</a></li>
+                <li><a href="#nav-bio">Über uns</a></li>
+            </ul>
+            <ul id="search">    
+                <input type="text" placeholder="Suchen..">
+            </ul> 
 
-        <div id="menu">
-            <nav>
-                <a href="#nav-peace" class="nav_item">Frieden</a>
-                <a href="#nav-peace" class="nav_item">Literatur</a>
             </nav>
-
-        <!--<nav class="menu">
-            <ul>
-                <li><a href="#">Startseite</a></li>
-                <li><a href="#">Über</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>  
-            </nav>-->
         </div>
     </header>
 
     <main>
+        <!--<div id="menu" class="navbar">
+            <nav>
+                <a href="#nav-peace" class="nav_item">Frieden</a>
+                <a href="#nav-peace" class="nav_item">Literatur</a>
+            </nav>
+        </div>-->  
+
         <div>
             <section id="content"> 
                 <h1 id="main_title">Die Friedensnobelpreisträger*innen</h1>
@@ -266,7 +318,7 @@
 
     <div id="Footer">
         <footer>
-        <p>2022 - Das ist eine auf Wikipedia-Daten basierende Seite der Friedensnobelpreisträger*innen</p>
+        <p>2022 - Das ist eine auf Wikipedia-Daten basierende Seite der Friedensnobelpreisträger*innen, 2022, Henriette Frädrich</p>
     </div>
 </footer>
 </body>

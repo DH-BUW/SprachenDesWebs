@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Über uns</title>
+
+<style>
+        header{
+            height: 100%;
+            margin: 0px;
+            background-color: #CAA481;
+        }
+        #header_logo{ 
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+        }
+        #header{
+            text-align: center;
+        }
+        /*ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 40;
+        }
+       
+        ul{
+            background-color: #CAA481;
+        }
+        a {
+            display: block;
+            padding: 8px;
+            float: left;
+        }*/
+
+        ul {
+            list-style-type: none;
+            margin-top: 1%;
+            margin: bottom 1%;
+            padding: 8px;
+            overflow: hidden;
+            background-color: #CAA481;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+        }
+        
+        li :hover{
+            background-color: #8b6632;
+        }
+
+        #searchbar{
+            text-align: right;
+            padding: 5px;
+            margin-top: 10px;
+            margin-right: 1px;
+            font-size: 15px;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #FEFFFE ;
+        }
+        /*.navbar{
+            background-color: rgb(108, 66, 29);
+            
+        }*/
+        #main_title{
+            text-align: center;
+        }
+
+        #ohsofunny {
+            text-align: center;
+        }
+
+        footer {
+            height: 100%;
+            margin: 0;
+            background-color: #FEFFFE ;
+            font-size: 75%;
+            text-align: center;
+        }
+
+        *{font-family: Arial, Helvetica, sans-serif;
+        }
+       
+</style>
+    
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img id="header_logo" src="./images/Nobel.png" alt="Logo">
+        </div>
+    
+        <nav class="menu">
+            <ul id="menu">
+                <li><a href="1-base-html-page-Startseite.html">Startseite</a></li>
+                <li><a href="1-base-html-page-Donnerstag_Fraedrich.html">Friedensnobelpreisträger*innen</a></li>
+                <li><a href="1-base-html-page-Dienstag_Fraedrich_2.html">Literaturnobelpreisträger*innen</a></li>
+                <li><a href="1-base-html-page-Ueber uns.html">Über uns</a></li>
+                <div id="searchbar">
+                    <input id="search_field" type="text" placeholder="Suchbegriff eingeben" autocomplete="o">
+                    <button onclick="suchen()">Suchen</button>
+                </div>
+            </ul> 
+        </nav>
+    </header>
+
+    <div id="title">
+       <h1 id="main_title">Über uns</h1> 
+    </div>
+        
+    <div id="ohsofunny">
+        <img id="meme" src="https://global.discourse-cdn.com/codecademy/original/5X/3/c/8/5/3c85feecb4eb52a4d69ef0891cfbc495a1da7174.png" alt="funnymeme">
+
+    </div>
+    
+
+    <div id="Footer">
+        <footer>
+        <p>Das ist eine auf Wikipedia-Daten basierende Seite der Nobelpreisträger*innen. </p>
+        <p>© 2022, Henriette Frädrich </p>
+    </div>
+        </footer>    
+
+        <script>
+            function suchen() {
+                let searchField = document.getElementById('search_field').value;
+                    window.find(searchField);
+            }
+        
+        
+        </script>    
+</body>
+
+</html>

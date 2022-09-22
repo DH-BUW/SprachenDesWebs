@@ -1,173 +1,261 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Literaturpreisträger:innen</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Literaturnobelpreisträger:innen</title>
+        <style>
+            header{
+                height: 100%;
+                margin: 0px;
+                background-color: #CAA481;
+            }
+            #header_logo{ 
+                height: 250px;
+                width: 250px;
+                border-radius: 50%;
+            }
+            #header{
+                text-align: center;
+            }
+            /*ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 40;
+            }
+           
+            ul{
+                background-color: #CAA481;
+            }
+            a {
+                display: block;
+                padding: 8px;
+                float: left;
+            }*/
+    
+            ul {
+                list-style-type: none;
+                margin-top: 1%;
+                margin: bottom 1%;
+                padding: 8px;
+                overflow: hidden;
+                background-color: #CAA481;
+            }
+    
+            li {
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px 15px;
+            }
+            
+            li :hover{
+                background-color: #8b6632;
+            }
+    
+            #searchbar{
+                text-align: right;
+                padding: 5px;
+                margin-top: 10px;
+                margin-right: 1px;
+                font-size: 15px;
+            }
+    
+            body {
+                height: 100%;
+                margin: 0;
+                background-color: #FEFFFE ;
+            }
+            /*.navbar{
+                background-color: rgb(108, 66, 29);
+                
+            }*/
+            #main_title{
+                text-align: center;
+            }
+            .gold_medal{
+                border-radius: 1%;
+            }
+            .boxen div {
+                /*border-style: solid;*/
+                background-color: #f8f3ee;
+                border-radius: 2%;
+                text-align: center;
+                margin: 1%;
+                padding: 1%;
+                width: 28%;
+            }
+            #nav_peace{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90%;
+                margin: auto;
+            }
+    
+            footer {
+                height: 100%;
+                margin: 0;
+                background-color: #FEFFFE ;
+                font-size: 75%;
+                text-align: center;
+            }
+    
+            *{font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
 
-<body>
-    <header>
-        <div id="header">
-            <img id="Header Logo" src="./images/Nobel.png" alt="Logo">
-        </div>
 
-        <div id="menu">
-            <nav>
-                <a href="#nav-peace" class="nav_item">Frieden</a>
-                <a href="#nav-peace" class="nav_item">Literatur</a>
+    </head>
+
+    <body>
+        <header>
+            <div id="header">
+                <img id="header_logo" src="./images/Nobel.png" alt="Logo">
+            </div>
+        
+            <nav class="menu">
+                <ul id="menu">
+                    <li><a href="1-base-html-page-Startseite.html">Startseite</a></li>
+                    <li><a href="1-base-html-page-Donnerstag_Fraedrich.html">Friedensnobelpreisträger*innen</a></li>
+                    <li><a href="1-base-html-page-Dienstag_Fraedrich_2.html">Literaturnobelpreisträger*innen</a></li>
+                    <li><a href="1-base-html-page-Ueber uns.html">Über uns</a></li>
+                    <div id="searchbar">
+                        <input id="search_field" type="text" placeholder="Suchbegriff eingeben" autocomplete="o">
+                        <button onclick="suchen()">Suchen</button>
+                    </div>
+                </ul> 
             </nav>
+        </header>
 
-        <!--<nav class="menu">
-            <ul>
-                <li><a href="#">Startseite</a></li>
-                <li><a href="#">Über</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>  
-            </nav>-->
-        </div>
-    </header>
-
-    <main>
-        <div id="content">
-            <section>
-                <h1 id="main title">Die Literaturnobelpreisträger*innen</h1>
-                <div id="nav_peace">
+        <div>
+            <section id="content"> 
+                <h1 id="main_title">Die Literaturnobelpreisträger*innen</h1>
+                    <div id="nav_peace" class="boxen">
                     <div>
-                        <b>1901</b>
+                        <h3>1901</h3>
                         <br />
                             <span>Sully Prudhomme (1839-1907)</span>
                         <br />
                             <span class="country">Frankreich</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sully-Prudhomme.jpg/150px-Sully-Prudhomme.jpg" alt="Sully Prudhomme (1839-1907)">    
                     </div>
                     <div>
-                        <b>1902</b>
+                        <h3>1902</h3>
                         <br />
                             <span>Theodor Mommsen (1817-1903)</span>
                         <br />
                             <span class="country">Deutsches Reich</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Theodor_Mommsen_1902.jpg/150px-Theodor_Mommsen_1902.jpg" alt="Theodor Mommsen (1817-1903)">    
                         </div>
                         <div>
-                        <b>1903</b>
+                        <h3>1903</h3>
                         <br />
                             <span>Bjørnstjerne Bjørnson (1832-1910)</span>
                         <br />
                             <span class="country">Norwegen</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Bj%C3%B8rnstjerne_Martinus_Bj%C3%B8rnson.jpg/150px-Bj%C3%B8rnstjerne_Martinus_Bj%C3%B8rnson.jpg" alt="Bjørnstjerne Bjørnson (1832-1910)">    
                     </div>
                     <div>
-                        <b>1904</b>
+                        <h3>1904</h3>
                         <br />
                             <span>Frédéric Mistral (1830-1914)</span>
                         <br />
                             <span class="country">Frankreich</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Portrait_frederic_mistral.jpg/150px-Portrait_frederic_mistral.jpg" alt="Frédéric Mistral (1830-1914)">
+                    <br />
+                    <br />
+                            <b>-----</b>
                     <br />
                     <br />
                             <span>José Echegaray (1832-1916)</span>
                         <br />
                             <span class="country">Spanien</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Jos%C3%A9_Echegaray_y_Eizaguirre.jpg/150px-Jos%C3%A9_Echegaray_y_Eizaguirre.jpg" alt="José Echegaray (1832-1916)">    
                     </div>
                     <div>
-                        <b>1905</b>
+                        <h3>1905</h3>
                         <br />
                         <span>Henryk Sienkiewicz (1846-1916)</span>
                         <br />
                             <span class="country">Polen</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Henryk_Sienkiewicz_1905.jpg/150px-Henryk_Sienkiewicz_1905.jpg" alt="Henryk Sienkiewicz (1846-1916)">
                     </div>
                     <div>
-                        <b>1906</b>
+                        <h3>1906</h3>
                         <br />
                             <span>Giosuè Carducci (1835-1907)</span>
                         <br />
                             <span class="country">Königreich Italien</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Giosu%C3%A8_Carducci_1906.jpg/150px-Giosu%C3%A8_Carducci_1906.jpg" alt="Giosuè Carducci (1835-1907)">    
                     </div>
                     <div>
-                        <b>1907</b>
+                        <h3>1907</h3>
                         <br />
                             <span>Rudyard Kipling (1865-1936)</span>
                         <br />
                             <span class="country">Vereinigtes Königreich</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Rudyard_Kipling.jpg/150px-Rudyard_Kipling.jpg" alt="Rudyard Kipling (1865-1936)">    
                     </div>
                     <div>
-                        <b>1908</b>
+                        <h3>1908</h3>
                         <br />
                             <span>Rudolf Eucken (1846-1926)</span>
                         <br />
                             <span class="country">Deutsches Reich</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rudolf_Eucken_1908.jpg/150px-Rudolf_Eucken_1908.jpg" alt="Rudolf Eucken (1846-1926)">    
                     </div>
                     <div>
-                        <b>1909</b>
+                        <h3>1909</h3>
                         <br />
                             <span>Selma Lagerlöf (1858-1940)</span>
                         <br />
                             <span class="country">Schweden</span>
                         <br />
+                        <br />
                             <img class="gold_medal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Selma_Lagerl%C3%B6f.jpg/150px-Selma_Lagerl%C3%B6f.jpg" alt="Selma Lagerlöf (1858-1940)">
-                    
-                    
-                    <!--<div>1901 Henry Dunant (1828-1910)</div>
-                    <div>1901 Frédéric Passy (1822-1912)</div>
-                    <div>1902 Élie Ducommun (1833-1906)</div>
-                    <div>1902 Albert Gobat (1843-1914)</div>
-                    <div>1903 William Randal Cremer (1828-1908)</div>
-                    <div>1904 Institut de Droit international (gegr. 1873)</div>
-                    <div>1905 Bertha von Suttner (1843-1914)</div>
-                    <div>1906 Theodore Roosevelt (1858-1919)</div>
-                    <div>1907 Erneste Teodoro Moneta (1833-1918)</div>
-                    <div>1907 Louis Renault (1843-1918)</div> -->
-                </div>
+        </div>
             </section>
         </div>
     </br>
-       
-<!-- <section>
-            <div id="card_suttner" class="card">
-                <img src="./images/100px-Bertha-von-Suttner-1906.jpg" alt="Bertha von Suttner">
-                <div class="container">
-                  <h4><b>Bertha von Suttner</b></h4>
-                  <p>Pazifistin, Friedensforscherin und Schriftstellerin</p>
-                </div>
-              </div>
-              <div id="card_gobat" class="card">
-                <img src="./images/100px-Charles_Albert_Gobat2.jpg" alt="Charles Albert Gobat">
-                <div class="container">
-                  <h4><b>Charles Albert Gobat</b></h4>
-                  <p>Politiker</p>
-                </div>
-              </div>
-              <div id="card_cremer" class="card">
-                <img src="./images/100px-Cremer.jpg" alt="William Randal Cremer">
-                <div class="container">
-                  <h4><b>William Randal Cremer</b></h4>
-                  <p>Politiker</p>
-                </div>
-              </div> 
-        </section> -->
     </main>
 </br>
 
     <div id="Footer">
         <footer>
-        <p>2022 - Das ist eine auf Wikipedia-Daten basierende Seite der Friedens- und Literaturnobelpreisträger*innen</p>
+        <p>Das ist eine auf Wikipedia-Daten basierende Seite der Nobelpreisträger*innen. </p>
+        <p>© 2022, Henriette Frädrich </p>
     </div>
-</footer>
-</body>
+    </footer>
 
+    <script>
+        function suchen() {
+            let searchField = document.getElementById('search_field').value;
+                window.find(searchField);
+        }
+    </script>
+    
+
+</body>
 </html>
